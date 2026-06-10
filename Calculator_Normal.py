@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 """ Requrements : 
 """
+=======
+
+>>>>>>> 3fdfd49 (Calculator)
 def add(a,b):
     return a+b
 
@@ -17,11 +21,20 @@ def div(a,b):
 
 print("Welcome TO Calculator!")
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 3fdfd49 (Calculator)
 while True:
     a = int(input("Enter No 1 : "))
     b = int(input("Enter No 2 : "))
     op = input("Enter Operator from this(+,-,*,/) : ")
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 3fdfd49 (Calculator)
     if op not in ["+","-","*","/"]:
         print("Operator is invalid")
     elif op == "+":
