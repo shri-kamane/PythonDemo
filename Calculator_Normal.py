@@ -1,5 +1,4 @@
-""" Requrements : 
-"""
+
 def add(a,b):
     return a+b
 
@@ -17,11 +16,13 @@ def div(a,b):
 
 print("Welcome TO Calculator!")
 
+
+
 while True:
     a = int(input("Enter No 1 : "))
     b = int(input("Enter No 2 : "))
     op = input("Enter Operator from this(+,-,*,/) : ")
-
+    
     if op not in ["+","-","*","/"]:
         print("Operator is invalid")
     elif op == "+":
