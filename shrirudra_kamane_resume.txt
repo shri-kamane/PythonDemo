@@ -1,0 +1,25 @@
+**SHRIRUDRA KAMANE**
+**Contact Information:**
+
+- Email: [shrirudrakamane@email.com](mailto:shrirudrakamane@email.com)
+- Phone: 123-456-7890
+- LinkedIn: linkedin.com/in/shrirudrakamane
+
+**PROFESSIONAL SUMMARY:**
+Highly motivated and detail-oriented software developer with a strong foundation in computer engineering. Proficient in a range of programming languages, including Java, Python, and DBMS. Skilled in web development, UI design, and AI technologies, with a passion for creating innovative solutions.
+
+**KEY SKILLS:**
+- **Programming Languages:** Java, Python, DBMS
+- **Development Tools:** Web Developer, UI Designer
+- **AI Technologies:** Generative AI, Agent-based AI
+- **Software Development Methodologies:** Agile, Scrum
+
+**EDUCATION:**
+- **Diploma in Computer Engineering**, XYZ College (20XX-20XX)
+  - Coursework: Computer Systems, Data Structures, Algorithms, Computer Networks, and Web Development
+
+**EXPERIENCE:**
+- **Collaborative Web Developer**, XYZ College (20XX-20XX)
+  - Contributed to the development of a cutting-edge CNG booking website, creating visually appealing designs and ensuring seamless user experiences.
+  - Designed and implemented a user-friendly interface for a college cafe website, resulting in a significant increase in customer engagement.
+  -
