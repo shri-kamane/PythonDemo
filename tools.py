@@ -4,9 +4,9 @@ import json
 import os
 load_dotenv()
 ###Define function####
-def calculator(exp:str)->str:
+def calculator(expression:str)->str:
     try:
-        return str(round(eval(exp), 2))
+        return str(round(eval(expression), 2))
     except:
         return "Invalid expression"
 def is_prime(number:int)->bool:
@@ -21,42 +21,42 @@ client = OpenAI(
     api_key=os.getenv("OPENAI_API_KEY")
 )
 ####tool description
-tools = [ 
-{
-    "type" : "function",
-    "function" : {
-        "name" : "calculator",
-        "discription" : "calucation of the given using simple evel function",
-        "parameters" : {
-            "type" : "object" ,
-            "properties" : {
-                "exp" : {
-                    "type" : "string",
-                    "discription" : "expression which on the performing the opearations"
-                }
-            },
-            "required" : ["exp"]
+tools = [
+    { 
+        "type": "function",
+        "function": {
+            "name": "calculator",
+            "description": "A simple calculator that evaluates mathematical expressions",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "expression": {
+                        "type": "string",
+                        "description": "The mathematical expression to evaluate"
+                    }
+                },
+                "required": ["expression"]
+            }
         }
-     }
-}
-,{
-    "type" : "function",
-    "function" : {
-        "name" : "oddevenchecker",
-        "discription" : "cheker for given is it odd or even",
-        "parameters" : {
-            "type" : "object",
-            "properties" : {
-                "number" : {
-                    "type" : "string",
-                    "discription" : "to take number from user"
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "is_prime",
+        "description": "Check if a number is prime",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "number": {
+                    "type": "integer",
+                    "description": "The number to check"
                 }
             },
-            "required" : ["number"]
+            "required": ["number"]
         }
     }
-}]
-
+    }
+]
 ####Agent Loop###
 def run_agent(user_question:str):
     message = [
@@ -84,7 +84,7 @@ def run_agent(user_question:str):
         print(f"Tool called: {tool_name}")
         tool_input = json.loads(message_response.tool_calls[0].function.arguments)
         if tool_name == "calculator":
-            result = calculator(tool_input["exp"])
+            result = calculator(tool_input["expression"])
             return f"Calculator Result: {result}"
         elif tool_name == "is_prime":
             result = is_prime(tool_input["number"])
